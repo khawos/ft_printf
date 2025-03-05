@@ -29,7 +29,7 @@ Compilez avec :
 make
 ```
 Puis incluez ft_printf.h dans votre projet et utilisez ft_printf comme suit :
-
+```
 #include "ft_printf.h"
 
 int main(void)
