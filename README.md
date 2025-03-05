@@ -1,30 +1,40 @@
 # ft_printf
-📌 Description
-Le projet ft_printf consiste à recréer la fonction standard printf de la bibliothèque C (<stdio.h>). L'objectif est d'implémenter une version personnalisée de cette fonction en respectant certaines spécifications, sans utiliser directement printf ni ses fonctions associées. Ce projet permet de développer une compréhension approfondie de la gestion des arguments variadiques et de la manipulation des sorties formatées en C.
 
-🛠️ Fonctionnalités
-La fonction ft_printf prend une chaîne de format et affiche les arguments correspondants en fonction des spécificateurs de format pris en charge. Voici les conversions implémentées :
+## Description
 
-%c : Affiche un caractère.
-%s : Affiche une chaîne de caractères.
-%p : Affiche un pointeur sous forme hexadécimale.
-%d / %i : Affiche un entier signé (décimal).
-%u : Affiche un entier non signé (décimal).
-%x / %X : Affiche un entier en hexadécimal (minuscule / majuscule).
-%% : Affiche le caractère %.
+`ft_printf` est une réimplémentation de la fonction standard `printf` en C. Cette version personnalisée reproduit son comportement tout en respectant les contraintes de la norme 42.
 
-🏗️ Contraintes et limitations
-L’utilisation des fonctions standard comme printf, sprintf ou snprintf est interdite.
-L’implémentation doit être efficace et respecter les contraintes de gestion mémoire.
-La gestion des arguments variadiques (va_list) est requise.
+Elle permet d'afficher des chaînes de caractères formatées avec divers types d'arguments. Le projet est un excellent exercice de manipulation des arguments variables et de gestion fine de l'affichage en C.
 
-🚀 Compilation et Utilisation
+## Fonctionnalités
+
+- Support des conversions :
+  - `%c` : Caractère
+  - `%s` : Chaîne de caractères
+  - `%p` : Pointeur (affichage en hexadécimal)
+  - `%d` / `%i` : Entier signé en base 10
+  - `%u` : Entier non signé en base 10
+  - `%x` / `%X` : Entier en base 16 (hexadécimal, respectivement en minuscules et majuscules)
+  - `%%` : Affichage d'un `%` littéral
+
+- Gestion des arguments variables avec `va_list`
+- Aucune utilisation des fonctions interdites par la norme 42 (ex : `printf`, `sprintf`, `malloc`, etc.)
+- Écriture optimisée pour minimiser l'utilisation des appels système `write`
+
+## Compilation et Utilisation
+
+Compilez avec :
+
+```s
+make
+```
+Puis incluez ft_printf.h dans votre projet et utilisez ft_printf comme suit :
+
 #include "ft_printf.h"
 
-int main(void) {
-    ft_printf("Hello, %s!\n", "world");
-    return (0);
+int main(void)
+{
+    ft_printf("Hello %s! The number is %d.\n", "world", 42);
+    return 0;
 }
-Compilation :
-📝 Auteur
-Projet réalisé dans le cadre de l’école 42.
+```
