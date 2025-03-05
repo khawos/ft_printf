@@ -12,26 +12,13 @@ La fonction ft_printf prend une chaîne de format et affiche les arguments corre
 %u : Affiche un entier non signé (décimal).
 %x / %X : Affiche un entier en hexadécimal (minuscule / majuscule).
 %% : Affiche le caractère %.
+
 🏗️ Contraintes et limitations
 L’utilisation des fonctions standard comme printf, sprintf ou snprintf est interdite.
 L’implémentation doit être efficace et respecter les contraintes de gestion mémoire.
 La gestion des arguments variadiques (va_list) est requise.
+
 🚀 Compilation et Utilisation
-🔧 Compilation
-Utilisez make pour compiler la bibliothèque :
-
-bash
-Copy
-Edit
-make
-Cela génère une bibliothèque libftprintf.a utilisable dans vos projets.
-
-📜 Utilisation
-Dans un projet, incluez ft_printf.h et compilez avec libftprintf.a :
-
-c
-Copy
-Edit
 #include "ft_printf.h"
 
 int main(void) {
@@ -39,10 +26,5 @@ int main(void) {
     return (0);
 }
 Compilation :
-
-bash
-Copy
-Edit
-gcc main.c libftprintf.a -o my_printf
 📝 Auteur
 Projet réalisé dans le cadre de l’école 42.
