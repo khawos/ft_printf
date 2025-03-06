@@ -2,9 +2,7 @@
 
 ## Description
 
-`ft_printf` est une réimplémentation de la fonction standard `printf` en C. Cette version personnalisée reproduit son comportement tout en respectant les contraintes de la norme 42.
-
-Elle permet d'afficher des chaînes de caractères formatées avec divers types d'arguments. Le projet est un excellent exercice de manipulation des arguments variables et de gestion fine de l'affichage en C.
+`ft_printf` est une réimplémentation de la fonction standard `printf` en C. 
 
 ## Fonctionnalités
 
@@ -18,7 +16,6 @@ Elle permet d'afficher des chaînes de caractères formatées avec divers types 
   - `%%` : Affichage d'un `%` littéral
 
 - Gestion des arguments variables avec `va_list`
-- Aucune utilisation des fonctions interdites par la norme 42 (ex : `printf`, `sprintf`, `malloc`, etc.)
 - Écriture optimisée pour minimiser l'utilisation des appels système `write`
 
 ## Compilation et Utilisation
