@@ -22,11 +22,11 @@
 
 Compilez avec :
 
-```s
+```sh
 make
 ```
 Puis incluez ft_printf.h dans votre projet et utilisez ft_printf comme suit :
-```
+```sh
 #include "ft_printf.h"
 
 int main(void)
